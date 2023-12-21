@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>Paint</title>
+
+     <!-- JS Toolkits references -->
+    <script src="/WinJS/js/base.js"></script>
+    <script src="/WinJS/js/ui.js"></script>
+    <script src="/WinJS/js/binding.js"></script>
+    <script src="/WinJS/js/controls.js"></script>
+    <script src="/WinJS/js/animations.js"></script>
+    <script src="/WinJS/js/uicollections.js"></script>
+    <script src="/WinJS/js/wwaapp.js"></script>
+    <link rel="stylesheet" href="/WinJS/css/ui-dark.css" />
+
+    <!-- Paint references -->
+    <link rel="stylesheet" href="/CSS/Main.css" />
+    <script src="/JS/Global.js"></script>
+    <script src="/JS/Utils.js"></script>
+    <script src="/JS/Tiles.js"></script>
+    <script src="/JS/ViewCards.js"></script>
+    <script src="/JS/StateManager.js"></script>
+    <script src="/JS/ViewManager.js"></script>
+    <script src="/JS/KeyManager.js"></script>
+    <script src="/JS/Sharing.js"></script>
+    <script src="/JS/Main.js"></script>
+</head>  
+
+<body data-design-activate="defaultPage.activated">
+    <section class="main-content">
+    </section>
+    <div id="Paint.Customization" style="visibility:hidden" data-win-control="WinJS.UI.SettingsPane" data-win-options="{width:'narrow',label:'Customize'}">
+        <div class="win-label">
+            <button onclick="WinJS.UI.SettingsPane.show()" class="win-backbutton"></button>
+            Customize
+        </div>
+        <div class="win-content">
+            <strong>Tiles</strong>
+            <p>Update the PaintPlay tile with the current canvas</p>
+            <button id="setCurrentTileSetting" onclick="Microsoft.Paint.Tiles.setCurrentCanvasAsTile()">Set tile</button>
+            <button id="clearTileSetting" onclick="Microsoft.Paint.Tiles.clearTile()">Clear tile</button>
+        </div>
+    </div>
+</body>
+</html>

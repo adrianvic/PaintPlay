@@ -1,0 +1,17 @@
+﻿.Canvas 
+{
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+#paintCanvas
+{
+    background: rgb(242, 242, 222);
+    height: 100%;
+    width: 100%;
+}
+
+.pannable
+{
+    overflow-x: scroll !important;
+}

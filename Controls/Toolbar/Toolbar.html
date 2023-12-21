@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>Toolbar</title>
+    
+    <link rel="stylesheet" href="/JS/CommandBar/CommandBar.css" />
+    <link rel="stylesheet" href="/JS/CommandBar/Flyout.css" />
+    <link rel="stylesheet" href="/Controls/ColorPicker/ColorPicker.css" />
+    <link rel="stylesheet" href="Toolbar.css" />
+
+    <script src="/WinJS/js/base.js"></script>
+    <script src="/WinJS/js/ui.js"></script>
+    <script src="/JS/Global.js"></script>
+
+    <script src="/JS/CommandBar/Flyout.js"></script>
+    <script src="/JS/CommandBar/CommandBar.js"></script>
+    <script src="/Controls/ColorPicker/ColorPicker.js"></script>
+    <script src="/Controls/Paint/Tools/Bristle.js"></script>
+    <script src="/Controls/Paint/Tools/Eraser.js"></script>
+    <script src="/Controls/Paint/Tools/Brush.js"></script>
+    <script src="/Controls/Paint/Painter.js"></script>
+    <script src="ToolbarColors.js"></script>
+    <script src="Toolbar.js"></script>
+</head>
+<body>
+    <div id="brush-flyout" data-win-control="WinJS.UI.Flyout" data-win-options="{ autoHide: 0, lightDismiss: false }">
+    </div>
+    <div id="size-flyout" data-win-control="WinJS.UI.Flyout" data-win-options="{ autoHide: 0, lightDismiss: false }">
+    </div>
+    <div id="option-flyout" data-win-control="WinJS.UI.Flyout" data-win-options="{ autoHide: 0, lightDismiss: false }">
+    </div>
+    <div id="more-flyout" data-win-control="WinJS.UI.Flyout" data-win-options="{ autoHide: 0, lightDismiss: false }">
+        <button id="undo-button">Undo</button> <!-- TODO: Win8Apps WORK 92: Add localization support -->
+        <button id="clear-button">Clear</button> <!-- TODO: Win8Apps WORK 92: Add localization support -->
+    </div>
+    <div id="appBar" class="appBar" data-win-control="WinJS.UI.AppBar" data-win-options="{ position: 'bottom', transient: true, autoHide: 0, lightDismiss: false }">
+        <div class="commandBar">
+        </div>
+    </div>
+</body>
+</html>

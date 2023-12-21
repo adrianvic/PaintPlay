@@ -1,0 +1,18 @@
+﻿.paintviewGrid
+{
+    display: -ms-grid;
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 1fr;
+    
+    height: 100%;
+    width: 100%;
+}
+
+.canvas
+{
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    
+    border: solid 20px #000000;
+    overflow: hidden;
+}

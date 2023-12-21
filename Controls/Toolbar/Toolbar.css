@@ -1,0 +1,133 @@
+﻿#command_toolbar_clear
+{
+    border: none;
+}
+
+.win-commandBar-stack-horiz button
+{
+    border: none;
+    font-family: "Segoe UI";
+    font-size: 9pt;
+    width: 100px;
+}
+
+.win-commandBar-stack-horiz button:hover
+{
+    background: rgb(17,17,17);
+}
+
+.win-commandBar-rule-horiz
+{
+    display: none;
+}
+
+.win-commandBar-horiz
+{
+    margin-left: 30px;
+}
+
+#brush-flyout
+{
+    background: rgb(242, 242, 222);
+    border: solid 2px rgb(17,17,17);
+    border-bottom: none;
+    color: rgb(17,17,17);
+    margin: 0 !important;
+    padding: 0;
+    width: 260px;
+}
+
+#size-flyout
+{
+    background: rgb(242, 242, 222);
+    border: solid 2px rgb(17,17,17);
+    border-bottom: none;
+    color: rgb(17,17,17);
+    margin: 0 !important;
+    padding: 0;
+    width: 260px;
+}
+
+#option-flyout
+{
+    background: rgb(242, 242, 222);
+    border: solid 2px rgb(17,17,17);
+    border-bottom: none;
+    color: rgb(17,17,17);
+    margin: 0 !important;
+    padding: 0;
+    width: 260px;
+}
+
+.toolbar-flyout
+{
+    background: rgb(242, 242, 222);
+    border: solid 2px rgb(17,17,17);
+    border-bottom: none;
+    color: rgb(17,17,17);
+    margin: 0 !important;
+    width: 260px;
+}
+
+.brush-preview
+{
+    height: 50px;
+    width: 100%;
+}
+
+.selectedPreview
+{
+    background: #CFDDE3;
+}
+
+.brush-width-thin
+{
+    height: 50px;
+    width: 260px;
+}
+
+.brush-width-thin canvas
+{
+    height: 100%;
+    width: 100%;
+}
+
+.brush-width-thick
+{
+    height: 100px;
+    width: 260px;
+}
+
+.colorpickerContainer
+{
+    margin-left: 30px;
+    margin-right: 17px;
+}
+
+.pan-mode-toggle
+{
+    color: #212121;
+    display: none;
+    font-family: "Segoe UI Semilight";
+    font-size: 20pt;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.toolbar-flyout-background
+{
+    background-color: rgba(0, 0, 0, 0);
+    bottom: 0;
+    position: absolute;
+    z-index: 1002;
+}
+
+.canvas-flyout-background
+{
+    background-color: rgba(0, 0, 0, 0);
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+}

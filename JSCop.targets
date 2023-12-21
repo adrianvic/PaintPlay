@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+ <Target Name="AfterBuild" Condition="$(RunJSCop) == 'true'">
+    <ItemGroup>
+      <JSItems Include="@(Content)"   Condition="%(Content.Extension)=='.js' AND %(Content.JSCOP) != 'false'"/>
+    </ItemGroup>
+    <Message Text="JSItems = @(JSItems, ',')" Importance="high"/>
+    <Exec Command="\\bpt-scratch\JSCop\Win8Current\bin\js50.exe analyze /disable:JS2026,JS2045,JS2073,JS2074,JS2076,JS3054,JS3056,JS3057,JS3058,JS3092 @(JSItems->'/file:%(FullPath)', ' ')" />
+  </Target>
+</Project>

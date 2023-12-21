@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="Microsoft.PaintPlay" Version="1.0.0.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProcessorArchitecture="neutral" />
+  <Properties>
+    <!-- TODO: Windows 8 Apps bug 92 Add localization support -->
+    <DisplayName>PaintPlay</DisplayName>
+    <Description>PaintPlay</Description>
+    <PublisherDisplayName>Microsoft Corporation</PublisherDisplayName>
+    <Logo>Res\storeLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2</OSMinVersion>
+    <OSMaxVersionTested>6.2</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="en-US" />
+  </Resources>
+  <Applications>
+    <Application Id="Microsoft.PaintPlay" StartPage="HTML\Main.html">
+      <VisualElements DisplayName="PaintPlay" Logo="Res\logo.png" SmallLogo="Res\smallLogo.png" Description="Paint" ForegroundText="light" BackgroundColor="#FFFFFF" InitialRotationPreference="landscapeAndFlipped">
+        <DefaultTile WideLogo="Res\wideLogo.png" />
+        <SplashScreen Image="Res\splashScreen.png" BackgroundColor="#414141" />
+      </VisualElements>
+    </Application>
+  </Applications>
+</Package>

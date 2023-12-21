@@ -1,0 +1,26 @@
+.win-mediaFlyout
+{
+    border: none;
+    line-height: normal;
+    padding: 0px;
+}
+
+.win-mediaFlyout-content
+{
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1001; /* Should be 1 higher than the background */
+}
+
+.win-mediaFlyout-background
+{    
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(Res/1x1.gif);
+    background-size: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    width: 100vw;
+    z-index: 1000; /* Z-index of AppBar is 999, flyout needs to be higher */
+}

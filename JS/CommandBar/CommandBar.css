@@ -1,0 +1,173 @@
+.win-commandBar-horiz
+{
+    font-size: 10pt;
+    margin: 0px 36px 0px 36px;
+}
+
+.win-commandBar-horiz[appLayout='0']
+{
+    margin: 0px;
+}
+
+.win-commandBar-stack-vert button
+{
+    width: 100%;
+}
+
+.win-commandBar-stack-horiz[stack='left']
+{
+    float: left;
+}
+
+.win-commandBar-stack-horiz[stack='right']
+{
+    float: right;
+}
+
+.win-commandBar-stack-test
+{
+    position: absolute;
+    visibility: hidden;
+}
+
+.win-commandBar-group-horiz
+{
+    display: inline;
+}
+
+.minimized *[data-win-minimize]
+{
+    display: none !important;
+}
+
+.win-commandBar-command-horiz
+{
+    background-color: transparent;
+    border: none;
+    color: #FFFFFF;
+    height: 88px;
+    margin: 0px;
+    padding: 14px 0px 10px 0px !important;
+    text-align: center;
+    width: 100px;
+}
+
+.win-commandBar-command-horiz div.commandLabel
+{
+    display: inline-block;
+    font-family: Segoe UI;
+    font-size: 10pt;
+    margin-top: 5px;
+    padding: 0px;
+    text-align: center;
+    width: 88px;
+}
+
+.win-commandBar-command-horiz img.commandIcon
+{
+    height: 40px;
+    width: 40px;
+}
+
+.win-commandBar-command-vert
+{
+    display: block;
+    float: none !important;
+}
+            
+.win-commandBar-hostedCommand-horiz
+{
+    display: inline;
+}
+
+.minimized .win-commandBar-rule-horiz
+{
+    margin-bottom: 0px;
+}
+
+.win-commandBar-rule-vert
+{
+    background-color: #707070;
+    height: 1px;
+    width: 100%;
+}
+
+.win-commandBar-rule-horiz
+{
+    background-color: #707070;
+    border: 0px;
+    display: inline-block;
+    height: 40px;
+    margin: 10px 29px 21px 28px;
+    padding: 0px;
+    width: 1px;
+}
+
+.win-commandBar-tooltip
+{
+    background-color: #FFFFFF;
+    border: 1px solid #2A2A2A;
+    display: inline-block;
+    max-width: 360px;
+    min-width: 200px;
+    padding: 3px 12px 6px 12px;
+}
+
+/*
+  This is the container for the tooltip heading, e.g. "Play Now (Ctrl+P)",
+  where "Play Now is the title and "(Ctrl+P)" is the shortcut.
+*/
+.win-commandBar-tooltip-heading
+{
+    display: -ms-box;    
+    overflow: hidden;
+}
+
+/*
+  This is the command title, which can use all of the extra space left once
+  the shortcut is rendered. If the title is too long to fit in that space
+  and the tooltip reaches its maximum width, the title is truncated with
+  an ellipsis.
+*/
+.win-commandBar-tooltip-title
+{
+    -ms-box-flex: 1;
+    padding-right: 5px;
+}
+
+/*
+  This is an empty div that keeps the shortcut div pushed against the right
+  side of the title div.
+*/
+.win-commandBar-tooltip-flex
+{
+    -ms-box-flex: 1000;
+}
+
+.win-commandBar-tooltip-description
+{
+    line-height: 14px;
+}
+
+.win-tooltip
+{
+    line-height: normal;
+    padding: 0px;
+    background-color: transparent;
+    border: none;
+}
+
+.win-appbar
+{
+    line-height: normal;
+}
+
+.win-appbar[transparent='true']
+{
+    background-color: transparent;
+}
+
+.win-commandBar-flyout
+{
+    padding: 0px;
+}

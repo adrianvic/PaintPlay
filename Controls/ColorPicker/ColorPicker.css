@@ -1,0 +1,28 @@
+﻿.colorpicker
+{
+    display: inline;
+    position: relative;
+}
+
+.colorpicker-color
+{
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    /*
+    -ms-transition-property: width, height, left, bottom;
+    -ms-transition-duration: 0.1s;
+    */
+}
+
+.colorpicker-selectedColor
+{
+    box-shadow: 0px 0px 0px 1px rgb(64, 64, 64), 0px 0px 0px 1px white inset;
+    z-index: 999;
+}
+
+.colorpicker-animatedColor
+{
+    -ms-transition-property: width, height, left, bottom;
+    -ms-transition-duration: 0.1s;
+}
